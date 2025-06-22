@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= title 
+    body 
+        h4 온도: #{temperature}℃
+        h4 상태: #{condition}
+
+        -var t = temperature
+        if t >= 30
+            p 매우 더워요!
+        else if t >= 20
+            p 따뜻해요!
+        else if t >= 10
+            p 쌀쌀해요!
+        else
+            p 추워요!
