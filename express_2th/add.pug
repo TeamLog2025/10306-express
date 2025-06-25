@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title add페이지
+    body 
+    h1 도서 추가 폼
+    form(action="/add", method="POST") 
+        label(for="title") 제목: 
+            input(type="text", id="title" name="title")
+        br 
+        label(for="author") 저자: 
+            input(type="text", id="author" name="author")
+        br
+        label(for="year") 출간 연도: 
+            input(type="text", id="year" name="year")
+        br
+        a(href="/")
+            button(type="submit") 제출
